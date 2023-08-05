@@ -11,7 +11,7 @@
     <style>
 
         body {
-            --bs-primary: #bbe3ff;
+            --bs-primary: #27aef1;
         }
         
         .page-height {
@@ -28,9 +28,9 @@
         }
 
         @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-            font-size: 3.5rem;
-        }
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
         }
 
         .b-example-divider {
@@ -201,12 +201,25 @@
         }
 
         section {
-            height: 100vh;
+            height: 66vh;
             box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
         }
 
+        .cover-section {
+            height: 100vh;
+        }
+
         section:nth-child(even) {
-            background-color: var(--bs-secondary-bg);
+            background-color: #282c31;
+        }
+
+        .info-row {
+            height: 66vh;
+            vertical-align: middle;
+        }
+
+        .info-row p {
+            font-size: 1.2em;
         }
 
     </style>
@@ -214,7 +227,7 @@
 </head>
 <body class="page-height text-center">
 
-    <section class="d-flex">
+    <section class="d-flex cover-section">
         <div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
             <header class="mb-auto">
                 <div>
@@ -251,197 +264,136 @@
     </section>
 
     <section>
-        <div class="container">
-            hello there
+
+        <div class="d-flex container info justify-content-center">
+            <div class="row info-row">
+                <div class="col my-auto">
+                    <h1>State-of-the-art remote monitoring systems</h1>
+                    <p>Our state-of-the-art remote monitoring systems keep a watchful eye on your IT infrastructure 24/7.</p>
+                </div>
+                <div class="col my-auto">some image here</div>
+            </div>
         </div>
+
     </section>
 
-    <!-- Navbar -->
+    <section>
 
-    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-
-        <div class="container container-fluid">
-
-            <a class="navbar-brand" href="#">
-                <img src="/globe.webp" alt="World One Systems" width="30" height="30">
-                World One Systems
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="container-fluid"></div>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </div>
-
-        </div>
-
-    </nav> -->
-
-    <!-- body -->
-
-    <!-- <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <div class="row mb-2">
-            <h1 class="">World One Systems</h1>
-        </div>
-        <div class="row">
-            <p>Your trusted partner for Managed IT Services, Remote Monitoring, and Support.</p>
-        </div>
-    </div>
-
-    <hr> -->
-<!-- 
-    <div class="container mt-5">
-
-        <div class="row">
-
-            <div class="">
-    
-                <div class="container accordion accordion-flush" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                What We Do:
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                Welcome to World One Systems, your trusted partner for Managed IT Services, Remote Monitoring, and Support. 
-                                We specialize in providing comprehensive and reliable IT solutions to businesses of all sizes. 
-                                Our expertise in managing and optimizing IT infrastructure allows you to focus on your core business while we handle the technology that drives your success. 
-                                From proactive remote monitoring to swift and efficient support, we ensure your IT operations run smoothly, securely, and efficiently.
-
-                                <img src="globe.webp" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Accordion Item #2
-                        </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                        </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Accordion Item #3
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
-                        </div>
-                    </div>
+        <div class="d-flex container info justify-content-center">
+            <div class="row info-row">
+                <div class="col my-auto">another image here</div>
+                <div class="col my-auto">
+                    <h1>Another selling point</h1>
+                    <p>yeah yeah</p>
                 </div>
-    
             </div>
-
         </div>
 
-    </div> -->
+    </section>
 
-    <!-- filler -->
-    <!-- will be made better -->
+    <section>
+
+        <div class="d-flex container info justify-content-center">
+            <div class="row info-row">
+                <div class="col my-auto">
+                    <h1>BUY OUR PRODUCT</h1>
+                    <p>we want money</p>
+                </div>
+                <div class="col my-auto">you get the point</div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- <section>
     
-    <!-- <div class="container">
+        <div class="container">
+    
+            <div class="container accordion accordion-flush pt-3" id="info-accordion">
+                <div class="accordion-item">
 
-        <div class="info">
-            <strong>What We Do:</strong> 
-            <p>
-                Welcome to World One Systems, your trusted partner for Managed IT Services, Remote Monitoring, and Support. 
-                We specialize in providing comprehensive and reliable IT solutions to businesses of all sizes. 
-                Our expertise in managing and optimizing IT infrastructure allows you to focus on your core business while we handle the technology that drives your success. 
-                From proactive remote monitoring to swift and efficient support, we ensure your IT operations run smoothly, securely, and efficiently.
-            </p>
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-one" aria-expanded="false" aria-controls="accordion-one">
+                            What We Do:
+                        </button>
+                    </h2> 
+                    
+                    <div id="accordion-one" class="accordion-collapse collapse" data-bs-parent="#info-accordion">
+                        <div class="accordion-body">
+                            Welcome to World One Systems, your trusted partner for Managed IT Services, Remote Monitoring, and Support. 
+                            We specialize in providing comprehensive and reliable IT solutions to businesses of all sizes. 
+                            Our expertise in managing and optimizing IT infrastructure allows you to focus on your core business while we handle the technology that drives your success. 
+                            From proactive remote monitoring to swift and efficient support, we ensure your IT operations run smoothly, securely, and efficiently.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    
+            <div class="info">
+                <strong>Why Choose Us:</strong> 
+                <p>
+                    At World One Systems, we take pride in being a leading provider of Managed IT Services, Remote Monitoring, and Support. 
+                </p>
+            </div>
+    
+            <div class="info">
+                <strong>Here's why you should choose us as your IT partner:</strong> 
+                <p>
+                    Proactive Remote Monitoring: Our state-of-the-art remote monitoring systems keep a watchful eye on your IT infrastructure 24/7. 
+                    We identify potential issues before they become major problems, ensuring minimal downtime and maximum efficiency.
+                </p>
+            </div>
+    
+            <div class="info">
+                <strong>Swift and Efficient Support:</strong> 
+                <p>
+                    When IT issues arise, our responsive support team is just a call away. We believe in resolving problems promptly to minimize disruptions to your business operations.
+                </p>
+            </div>
+    
+            <div class="info">
+                <strong>Security First:</strong> 
+                <p>
+                    We understand the critical importance of data security. Our robust security measures protect your sensitive information from cyber threats, providing you with peace of mind and safeguarding your business's reputation.
+                </p>
+            </div>
+    
+            <div class="info">
+                <strong>Experienced IT Professionals:</strong> 
+                <p></p>Our team of experienced IT professionals brings a wealth of knowledge and expertise to handle any IT challenge. From troubleshooting to strategic planning, we have the skills to address your unique needs
+            </div>
+    
+            <div class="info">
+                <strong>Customized Solutions:</strong> 
+                <p></p>We understand that every business is different. Our Managed IT Services are tailored to your specific requirements, ensuring you get the right solutions that fit your organization's goals and budget.
+            </div>
+    
+            <div class="info">
+                <strong>Scalable Support:</strong> 
+                <p></p>As your business grows, so do your IT needs. Our scalable support allows you to expand your operations without worrying about technology limitations.
+            </div>
+    
+            <div class="info">
+                <strong>Local Support, Global Reach:</strong> 
+                <p></p>Although we are based in Houston, TX, our remote monitoring and support capabilities extend globally. No matter where you are, we're here to help.
+            </div>
+    
+            <div class="info">
+                <strong>About Us:</strong> 
+                <p></p>World One Systems has been at the forefront of providing exceptional Managed IT Services since our inception. With a passion for technology and a commitment to our clients' success, we have built a reputation for reliability and excellence in the IT industry. Our dedication to staying updated with the latest trends and security measures ensures that your business receives cutting-edge solutions that help you stay competitive in today's digital landscape.
+            </div>
+    
+            <div class="info">
+                <strong>Contact Us:</strong> 
+                <p>
+                    Ready to experience hassle-free IT management with World One Systems? Get in touch with us today to discuss your IT needs and how we can tailor our services to support your business.
+                </p>
+            </div>
+    
         </div>
 
-        <div class="info">
-            <strong>Why Choose Us:</strong> 
-            <p>
-                At World One Systems, we take pride in being a leading provider of Managed IT Services, Remote Monitoring, and Support. 
-            </p>
-        </div>
-
-        <div class="info">
-            <strong>Here's why you should choose us as your IT partner:</strong> 
-            <p>
-                Proactive Remote Monitoring: Our state-of-the-art remote monitoring systems keep a watchful eye on your IT infrastructure 24/7. 
-                We identify potential issues before they become major problems, ensuring minimal downtime and maximum efficiency.
-            </p>
-        </div>
-
-        <div class="info">
-            <strong>Swift and Efficient Support:</strong> 
-            <p>
-                When IT issues arise, our responsive support team is just a call away. We believe in resolving problems promptly to minimize disruptions to your business operations.
-            </p>
-        </div>
-
-        <div class="info">
-            <strong>Security First:</strong> 
-            <p>
-                We understand the critical importance of data security. Our robust security measures protect your sensitive information from cyber threats, providing you with peace of mind and safeguarding your business's reputation.
-            </p>
-        </div>
-
-        <div class="info">
-            <strong>Experienced IT Professionals:</strong> 
-            <p></p>Our team of experienced IT professionals brings a wealth of knowledge and expertise to handle any IT challenge. From troubleshooting to strategic planning, we have the skills to address your unique needs
-        </div>
-
-        <div class="info">
-            <strong>Customized Solutions:</strong> 
-            <p></p>We understand that every business is different. Our Managed IT Services are tailored to your specific requirements, ensuring you get the right solutions that fit your organization's goals and budget.
-        </div>
-
-        <div class="info">
-            <strong>Scalable Support:</strong> 
-            <p></p>As your business grows, so do your IT needs. Our scalable support allows you to expand your operations without worrying about technology limitations.
-        </div>
-
-        <div class="info">
-            <strong>Local Support, Global Reach:</strong> 
-            <p></p>Although we are based in Houston, TX, our remote monitoring and support capabilities extend globally. No matter where you are, we're here to help.
-        </div>
-
-        <div class="info">
-            <strong>About Us:</strong> 
-            <p></p>World One Systems has been at the forefront of providing exceptional Managed IT Services since our inception. With a passion for technology and a commitment to our clients' success, we have built a reputation for reliability and excellence in the IT industry. Our dedication to staying updated with the latest trends and security measures ensures that your business receives cutting-edge solutions that help you stay competitive in today's digital landscape.
-        </div>
-
-        <div class="info">
-            <strong>Contact Us:</strong> 
-            <p>
-                Ready to experience hassle-free IT management with World One Systems? Get in touch with us today to discuss your IT needs and how we can tailor our services to support your business.
-            </p>
-        </div>
-
-    </div> -->
+    </section> -->
 
     <!-- <footer class="bg-secondary-subtle">
 
